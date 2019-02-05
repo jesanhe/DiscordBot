@@ -104,7 +104,6 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
 
     function twoDigits(data) {
       data = data.toString();
-      console.log(typeof data);
       if (data.length < 2) {
         data = `0${data}`;
       }
