@@ -2,6 +2,14 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
+/*
+*
+*https://glitch.com/edit/#!/jesanhe-discordbot?path=index.js:69:6
+*
+*/
+
+
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 
@@ -45,7 +53,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
     // console.log(oldMember.guild.channels);
     // console.log('new member');
     // console.log(newMember);
-    
+    // TODO: wait until yhe channel is created to start sending message
     isLogCreated(oldMember);
     const channel = oldMember.guild.channels.find(ch => ch.name === 'logs');
     // console.log(channel);
