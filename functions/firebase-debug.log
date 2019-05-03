@@ -1,0 +1,103 @@
+[debug] [2019-05-02T22:52:40.985Z] ----------------------------------------------------------------------
+[debug] [2019-05-02T22:52:40.989Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jero\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions,hosting --debug
+[debug] [2019-05-02T22:52:40.990Z] CLI Version:   6.7.2
+[debug] [2019-05-02T22:52:40.990Z] Platform:      win32
+[debug] [2019-05-02T22:52:40.990Z] Node Version:  v10.15.0
+[debug] [2019-05-02T22:52:40.992Z] Time:          Fri May 03 2019 00:52:40 GMT+0200 (GMT+02:00)
+[debug] [2019-05-02T22:52:40.992Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-02T22:52:41.005Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-02T22:52:41.006Z] > authorizing via signed-in user
+[debug] [2019-05-02T22:52:41.006Z] [iam] checking project heradiscordbot for permissions ["firebase.projects.get"]
+[debug] [2019-05-02T22:52:41.009Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/heradiscordbot:testIamPermissions  
+
+[debug] [2019-05-02T22:52:41.868Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-02T22:52:41.870Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/heradiscordbot  
+ 
+[debug] [2019-05-02T22:52:42.680Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'E:\Project\DiscordBot'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-05-02T22:52:43.423Z] Fetching environment
+[debug] [2019-05-02T22:52:43.426Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1096076029564:getServerAppConfig  
+ 
+[debug] [2019-05-02T22:52:43.427Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1096076029564/clients/_:getWebAppConfig  
+ 
+[debug] [2019-05-02T22:52:43.629Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-02T22:52:43.630Z] Starting @google-cloud/functions-emulator
+[debug] [2019-05-02T22:52:43.694Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-05-02T22:52:45.659Z] Parsing function triggers
+[info] +  functions: app: http://localhost:5001/heradiscordbot/us-central1/app
+[info] Shutting down...
+[info] Shutting down...
+[debug] [2019-05-02T22:53:22.457Z] ----------------------------------------------------------------------
+[debug] [2019-05-02T22:53:22.461Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jero\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions,hosting --debug
+[debug] [2019-05-02T22:53:22.461Z] CLI Version:   6.7.2
+[debug] [2019-05-02T22:53:22.461Z] Platform:      win32
+[debug] [2019-05-02T22:53:22.462Z] Node Version:  v10.15.0
+[debug] [2019-05-02T22:53:22.463Z] Time:          Fri May 03 2019 00:53:22 GMT+0200 (GMT+02:00)
+[debug] [2019-05-02T22:53:22.463Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-02T22:53:22.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-02T22:53:22.476Z] > authorizing via signed-in user
+[debug] [2019-05-02T22:53:22.477Z] [iam] checking project heradiscordbot for permissions ["firebase.projects.get"]
+[debug] [2019-05-02T22:53:22.479Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/heradiscordbot:testIamPermissions  
+
+[debug] [2019-05-02T22:53:23.343Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-02T22:53:23.344Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/heradiscordbot  
+ 
+[debug] [2019-05-02T22:53:24.159Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'E:\Project\DiscordBot'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-05-02T22:53:24.898Z] Fetching environment
+[debug] [2019-05-02T22:53:24.901Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1096076029564:getServerAppConfig  
+ 
+[debug] [2019-05-02T22:53:24.902Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1096076029564/clients/_:getWebAppConfig  
+ 
+[debug] [2019-05-02T22:53:25.198Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-05-02T22:53:25.320Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-02T22:53:25.321Z] Starting @google-cloud/functions-emulator
+[debug] [2019-05-02T22:53:27.348Z] Parsing function triggers
+[info] +  functions: app: http://localhost:5001/heradiscordbot/us-central1/app
+[info] Shutting down...
+[info] Shutting down...
+[debug] [2019-05-02T22:53:50.520Z] ----------------------------------------------------------------------
+[debug] [2019-05-02T22:53:50.524Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jero\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions,hosting --debug
+[debug] [2019-05-02T22:53:50.524Z] CLI Version:   6.7.2
+[debug] [2019-05-02T22:53:50.525Z] Platform:      win32
+[debug] [2019-05-02T22:53:50.525Z] Node Version:  v10.15.0
+[debug] [2019-05-02T22:53:50.526Z] Time:          Fri May 03 2019 00:53:50 GMT+0200 (GMT+02:00)
+[debug] [2019-05-02T22:53:50.527Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-02T22:53:50.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-02T22:53:50.540Z] > authorizing via signed-in user
+[debug] [2019-05-02T22:53:50.540Z] [iam] checking project heradiscordbot for permissions ["firebase.projects.get"]
+[debug] [2019-05-02T22:53:50.542Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/heradiscordbot:testIamPermissions  
+
+[debug] [2019-05-02T22:53:51.399Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-02T22:53:51.402Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/heradiscordbot  
+ 
+[debug] [2019-05-02T22:53:52.196Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'E:\Project\DiscordBot'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-05-02T22:53:52.927Z] Fetching environment
+[debug] [2019-05-02T22:53:52.930Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1096076029564:getServerAppConfig  
+ 
+[debug] [2019-05-02T22:53:52.930Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1096076029564/clients/_:getWebAppConfig  
+ 
+[debug] [2019-05-02T22:53:53.141Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-02T22:53:53.142Z] Starting @google-cloud/functions-emulator
+[debug] [2019-05-02T22:53:53.208Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-05-02T22:53:55.166Z] Parsing function triggers
+[info] +  functions: app: http://localhost:5001/heradiscordbot/us-central1/app
