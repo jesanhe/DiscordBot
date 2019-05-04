@@ -5,11 +5,13 @@ const client = new Discord.Client();
 client
   .login(process.env.discord_token)
   // .then(console.log(`Logged in as ${client.user.tag}!`))
-  .then(console.log('Log succesfull'))
+  .then(console.log("Log succesfull"))
   .catch(console.error);
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
+
+  let bot = client.user;
 
   let guild = client.guilds;
   // console.log(guild);
@@ -81,6 +83,9 @@ client.on("voiceStateUpdate", (oldMember, newMember) => {
 
 function isLogCreated(member) {
   let logs = false;
+  let everyone_role_id = "";
+  let hera_role_id = "";
+
   member.guild.channels.forEach(channel => {
     if (channel.type === "text") {
       if (channel.name === "logs") {
@@ -88,6 +93,28 @@ function isLogCreated(member) {
       }
     }
   });
+
+  // console.log(member.guild.roles);
+  member.guild.roles.forEach(role => {
+    if (role.name === "@everyone") {
+      // console.log(role.id)
+      everyone_role_id = role.id;
+    }
+
+    if (role.name === "bothera") {
+      hera_role_id = role.id;
+    }
+  });
+
+  if (!hera_role_id) {
+    member.guild
+      .createRole({ name: "bothera", color: 'AQUA' })
+      .then(role => {
+        console.log(`Created new role with name: ${role.name}`);
+        hera_role_id = role.id;
+      })
+      .catch(console.error);
+  }
 
   if (!logs) {
     // TODO: Create the channel in solo read mode
@@ -104,6 +131,9 @@ function formatDate(date) {
   let day = date.getDay();
   let month = date.getMonth();
   let year = date.getFullYear();
+
+  console.log('day', day);
+  console.log('month', month);
 
   hour = twoDigits(hour);
   minutes = twoDigits(minutes);
