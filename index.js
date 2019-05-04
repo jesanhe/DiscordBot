@@ -1,17 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const config = require("./config.json");
-
-/*
-*
-*https://glitch.com/edit/#!/jesanhe-discordbot?path=index.js:69:6
-*
-*/
-
-
+// const config = require("./config.json");
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  console.log(process.env)
 
   let guild = client.guilds;
   // console.log(guild);
@@ -34,7 +27,7 @@ client.on('message', msg => {
   }
 });
 
-client.login(config.token);
+client.login(process.env.disord_token);
 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
     let newUserChannel = newMember.voiceChannel
