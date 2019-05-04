@@ -4,11 +4,11 @@ const client = new Discord.Client();
 
 client
   .login(process.env.discord_token)
-  .then(console.log)
+  .then(console.log(`Logged in as ${client.user.tag}!`))
   .catch(console.error);
 
 client.on("ready", () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+  console.log(`Bot READY`);
 
   let guild = client.guilds;
   // console.log(guild);
