@@ -128,9 +128,11 @@ function isLogCreated(member) {
 function formatDate(date) {
   let hour = date.getHours();
   let minutes = date.getMinutes();
-  let day = date.getDay();
-  let month = date.getMonth();
+  let day = date.getDate();
+  let month = date.getMonth() + 1;
   let year = date.getFullYear();
+
+  console.log(date);
 
   console.log('day', day);
   console.log('month', month);
