@@ -132,11 +132,6 @@ function formatDate(date) {
   let month = date.getMonth() + 1;
   let year = date.getFullYear();
 
-  console.log(date);
-
-  console.log('day', day);
-  console.log('month', month);
-
   hour = twoDigits(hour);
   minutes = twoDigits(minutes);
   day = twoDigits(day);
